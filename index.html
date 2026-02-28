@@ -5,10 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현장톡톡 - 스마트 건설 소통 플랫폼</title>
     
-    <!-- 파비콘 설정 -->
     <link rel="icon" type="image/png" href="현장톡톡-파비.png">
     
-    <!-- Tailwind CSS (스타일링 툴) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
@@ -65,19 +63,15 @@
 </head>
 <body class="h-screen w-full flex items-center justify-center relative selection:bg-yellow-500 selection:text-black">
     
-    <!-- 배경 장식 -->
     <div class="bg-blob blob-1"></div>
     <div class="bg-blob blob-2"></div>
 
     <main class="text-center flex flex-col items-center z-10 w-full max-w-5xl px-6">
         
-        <!-- 메인 이미지 (둥둥 떠다니는 효과 컨테이너) -->
         <div class="float-anim mb-14">
             <div class="relative group cursor-pointer">
-                <!-- 이미지 뒤에 은은하게 깔리는 빛 번짐 (Hover 시 밝아짐) -->
                 <div class="absolute -inset-1 bg-gradient-to-r from-yellow-500 to-green-500 rounded-[2.5rem] blur opacity-25 group-hover:opacity-45 transition duration-1000 group-hover:duration-300"></div>
                 
-                <!-- 업로드하신 메인 이미지 (PNG 우선 적용, 실패시 JPG 로드) -->
                 <img
                     src="현장톡톡-홈화면UI.png"
                     onerror="this.onerror=null; this.src='현장톡톡-홈화면UI.jpg';"
@@ -87,7 +81,6 @@
             </div>
         </div>
 
-        <!-- 텍스트 영역 -->
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-green-400 drop-shadow-sm">
             현장 소통의 새로운 기준
         </h1>
@@ -96,10 +89,11 @@
             '현장톡톡'과 함께 더 빠르고 안전한 작업 환경을 경험하세요.
         </p>
 
-        <!-- 콜투액션(CTA) 버튼 -->
-        <button class="px-10 py-4 bg-white text-black rounded-full font-bold text-lg md:text-xl transition-all duration-300 hover:scale-105 hover:bg-yellow-50 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]">
-            앱 다운로드
-        </button>
+        <a href="sha256:ec76a00ca141dcd0172949205c7e8a26f430babc12cc48b8487c3bb263a1bf75" download>
+            <button class="px-10 py-4 bg-white text-black rounded-full font-bold text-lg md:text-xl transition-all duration-300 hover:scale-105 hover:bg-yellow-50 shadow-[0_0_20px_rgba(255,255,255,0.2)] hover:shadow-[0_0_30px_rgba(255,255,255,0.4)] cursor-pointer">
+                앱 다운로드
+            </button>
+        </a>
         
     </main>
 </body>
